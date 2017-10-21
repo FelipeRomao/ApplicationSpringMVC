@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="layout.tiles" template="/WEB-INF/views/layout/baseLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/layout/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
+	</definition>
+	<!-- *Album* -->
+	<definition name="album.adicionar.tiles" extends="layout.tiles">
+		<put-attribute name="title" value="Spotify | Adição de álbum" />
+		<put-attribute name="body" value="/WEB-INF/views/albuns/adicionar.jsp" />
+	</definition>
+	<definition name="album.alterar.tiles" extends="layout.tiles">
+		<put-attribute name="title" value="Spotify | Edição de álbum" />
+		<put-attribute name="body" value="/WEB-INF/views/albuns/alterar.jsp" />
+	</definition>
+	<definition name="album.listar.tiles" extends="layout.tiles">
+		<put-attribute name="title" value="Spotify | Exibição de álbuns" />
+		<put-attribute name="body" value="/WEB-INF/views/albuns/listar.jsp" />
+	</definition>
+	<!-- *Música* -->
+	<definition name="musica.adicionar.tiles" extends="layout.tiles">
+		<put-attribute name="title" value="Spotify | Adição de músicas" />
+		<put-attribute name="body" value="/WEB-INF/views/musicas/adicionar.jsp" />
+	</definition>
+	<definition name="musica.alterar.tiles" extends="layout.tiles">
+		<put-attribute name="title" value="Spotify | Edição de música" />
+		<put-attribute name="body" value="/WEB-INF/views/musicas/alterar.jsp" />
+	</definition>
+	<definition name="musica.listar.tiles" extends="layout.tiles">
+		<put-attribute name="title" value="Spotify | Exibição de músicas" />
+		<put-attribute name="body" value="/WEB-INF/views/musicas/listar.jsp" />
+	</definition>
+	<!-- *Usuário* -->
+	<definition name="usuario.adicionar.tiles" extends="layout.tiles">
+		<put-attribute name="title" value="Spotify | Adição de usuários" />
+		<put-attribute name="body" value="/WEB-INF/views/usuarios/adicionar.jsp" />
+	</definition>
+	<definition name="usuario.listar.tiles" extends="layout.tiles">
+		<put-attribute name="title" value="Spotify | Exibição de usuários" />
+		<put-attribute name="body" value="/WEB-INF/views/usuarios/listar.jsp" />
+	</definition>
+</tiles-definitions>
